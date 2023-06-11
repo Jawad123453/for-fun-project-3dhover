@@ -1,0 +1,119 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body{
+  background-color:skyblue;
+}
+header{
+  width: 85%;
+  margin: 50px auto 30px ;
+}
+header h3{
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom:20px;
+}
+header p{
+  line-height: 1.8;
+  font-size: 15px;
+}
+.section{
+  width: 85%;
+  margin: 10px auto 0 ;
+  display: flex;
+  margin-bottom: 50px;
+}
+.section .section-inputs{
+  padding:30px 70px;
+  background-color: white;
+  width:60%;
+}
+.section .section-inputs h3{
+  color:darkblue;
+  font-size: 17px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+.section .section-inputs form .box{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+  grid-column-gap: 30px;
+}
+.section .section-inputs form .box .boxes{
+  display: flex;
+  flex-direction: column;
+}
+.section .section-inputs form h4,
+.section .section-inputs form {
+  color:blue;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+.section .section-inputs form .box .boxes input{
+  border: none;
+  border-bottom: 1px dotted #777;
+  padding:10px 0px;
+}
+.section .section-inputs form textarea,
+.section .section-inputs form .box .boxes input:focus{
+  outline: none;
+}
+.section .section-inputs form h4{
+  margin-top: 30px;
+}
+.section .section-inputs form textarea{
+  padding:10px;
+  width: 100%;
+}
+.section .section-inputs form button{
+  background-color: darkblue;
+  color:white;
+  border: none;
+  font-size: 14px;
+  border-radius: 30px;
+  padding:10px 25px;
+  margin-top: 15px;
+  box-shadow: 0px 5px 10px #777;
+}
+.section .section-reach{
+  padding:30px 40px;
+  background-color: darkblue;
+  color:white;
+  width: 40%;
+}
+.section .section-reach h3{
+  margin-bottom: 75px;
+}
+.section .section-reach .reach-flex{
+  display: flex;
+}
+.section .section-reach .reach-flex h5{
+  margin-right: 40px;
+  margin-bottom: 20px;
+  line-height: 1.7;
+  font-size: 12px;
+}
+.section .section-reach .reach-flex h4{
+  margin-bottom: 20px;
+  line-height: 1.7;
+  font-size: 12px;
+}
+@media (max-width:992px) {
+  .section{
+    flex-direction: column;
+  }
+  .section .section-inputs{
+    width:100%;
+  }
+  .section .section-reach{
+    width: 100%;
+  }
+}
+@media (max-width:550px) {
+  .section .section-inputs{
+    padding:30px 20px;
+  }
+}

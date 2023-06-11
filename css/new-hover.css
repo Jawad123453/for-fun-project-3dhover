@@ -1,0 +1,73 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body{
+  height: 100vh;
+  width: 100%;
+  justify-content:center ;
+  display: flex;
+  align-items: flex-end;
+  gap:250px;
+}
+.contaner1,
+.contaner{
+  position: relative;
+  height:400px;
+  width:200px;
+  background-color: rgb(204, 204, 204);
+  transform: rotate(-30deg) skew(25deg);
+  transition: 0.3s linear;
+}
+.img,
+.img1{
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height:100%;
+  width: 100%;
+  position: absolute;
+  transition: 0.3s linear;
+}
+.img:nth-child(4){
+  background-image: url("https://i.pinimg.com/originals/94/b5/2e/94b52e6d83b83c12941ec6ee3fc69363.png");
+}
+.img:nth-child(3){
+  background-image: url("https://thumbs.dreamstime.com/b/fan-comics-disguised-as-joker-cosplay-convention-buenos-aires-argentina-115900793.jpg");
+}
+.img:nth-child(2){
+  background-image: url("https://i.pinimg.com/originals/5a/ae/d8/5aaed84cf30b95698425ec8cb8ec5bef.jpg");
+}
+.img:nth-child(1){
+  background-image: url("https://comicvine.gamespot.com/a/uploads/scale_medium/12/124259/7538232-three-jokers-1-cvr-fnl-1583776056592.jpg");
+}
+.img1:nth-child(4){
+  background-image: url("https://images.unsplash.com/photo-1531259683007-016a7b628fc3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmF0bWFufGVufDB8fDB8fA%3D%3D&w=1000&q=80");
+}
+.img1:nth-child(3){
+  background-image: url("https://i.pinimg.com/236x/4a/7d/26/4a7d26c40e35825f3ef16ef51c83ccfb.jpg");
+}
+.img1:nth-child(2){
+  background-image: url("https://images.hindustantimes.com/img/2022/03/04/1600x900/the_batman_review_1646365281127_1646365281244.jpeg");
+}
+.img1:nth-child(1){
+  background-image: url("https://www.dccomics.com/sites/default/files/BatmanImposter_marquee_60ece9f6389688.26933998.jpg");
+}
+.contaner:hover .img:nth-child(4),
+.contaner1:hover .img1:nth-child(4){
+  transform: translate(200px,-200px);
+}
+.contaner:hover .img:nth-child(3),
+.contaner1:hover .img1:nth-child(3){
+  transform: translate(120px,-120px);
+}
+.contaner:hover .img:nth-child(2),
+.contaner1:hover .img1:nth-child(2){
+  transform: translate(40px,-40px);
+}
+.contaner:hover .img:nth-child(1),
+.contaner1:hover .img1:nth-child(1){
+  transform: translate(0px,0px);
+}
